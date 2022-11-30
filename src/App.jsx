@@ -20,13 +20,14 @@ componentDidMount(){setInterval(this.inc, 1000)}
 
 
 
+
 handleShow = () => this.setState({show: !this.state.show})
 
   render() {
     return (
       <div className='App'>
      
-      <button onClick={this.handleShow} style={{"height":100, "width":100 , backgroundColor : "orange" , textDecorationStyle:"double" , textAlign:"center"}}> HIDE/SHOW </button>
+      <button onClick={this.handleShow} style={{"height":75, "width":150 , backgroundColor : "orange" , WebkitBackgroundSize : "50" , textAlign:"center"}}> HIDE/SHOW </button>
       <h2> {this.state.conter} </h2>
       { this.state.show &&
       <div>
